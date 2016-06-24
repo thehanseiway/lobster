@@ -1,62 +1,53 @@
 /*=============================================================================
 Header
 =============================================================================*/
+.bg-gradient {
+    background: linear-gradient(top, $white, #e6e5e5);
+}
 
-.navbar {
-    padding: rem(10);
-    z-index: 1000;
-    width: 100%;
-    position: fixed;
-    transition: all $trans-time;
-    border-radius: 0;
+.logo {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: rem(121);
+    margin-top: rem(10);
+}
 
-    +above(768px) {
-        padding: rem(20) rem(30);
++above(992px) {
+    .navbar-nav.add-to-cart {
+        right: 15px;
+        left: auto;
     }
 
-    &.is-fixed {
-        background: rgba($black, $op-black);
-        padding-top: rem(10);
-        padding-bottom: rem(10);
-        position: fixed;
+    .navbar-nav {
+        position: absolute;
+        bottom:8px;
+        left: 15px
+        margin-right: 0;
 
-        .navbar-brand {
-            max-width: rem(50);
-        }
+        & > li > a {
+            font-weight: 600;
+            font-size: 20px;
+            color: $black;
+            padding: 0;
+            text-transform: uppercase;
 
-        .navbar-menu {
-            height: rem(40);
+            &:focus,
+            &:hover {
+                background-color: transparent !important;
+                color: $red;
+            }
         }
+    }
+
+    .navbar-collapse {
+        padding: 0;
     }
 }
 
-.navbar-brand {
-    max-width: rem(80);
-    padding: 0;
+.navbar-collapse.collapse {
+    height: rem(180) !important;
+    position: relative;
     transition: all $trans-time;
-
-    img {
-        max-width: 100%;
-    }
-}
-
-.navbar-menu {
-    height: rem(63.5);
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    transition: all $trans-time;
-}
-
-.nav-link {
-    @extend $btm-bd-anim;
-    
-    +below(768px) {
-        font-size: rem(24);
-        margin-right: rem(10);
-
-        &::after {
-            content: '';
-        }
-    }
 }

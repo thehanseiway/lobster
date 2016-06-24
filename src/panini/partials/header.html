@@ -1,61 +1,60 @@
-<header class="header">
+<header class="header bg-gradient">
 
-    <!-- #Navigation -->
-    <nav id="js-navbar" class="navbar navbar-dark">
+    <nav class="navbar">
         <div class="container">
-            <div class="navbar-nav nav">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+            </div>
 
-                <!-- #Logo -->
-                <a class="navbar-brand" href="#">
-                    <img src="/src/images/logo.png" alt="">
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Home</a></li>
+                </ul>
+
+                <!-- Logo -->
+                <a class="logo" href="/">
+                    <img src="/dist/img/logo.png" alt="">
                 </a>
-                <!-- /Logo -->
 
-                <!-- #Menu -->
-                <div class="navbar-menu">
-                    <a
-                        class="nav-item nav-link {{#ifpage 'index'}}active{{/ifpage}}"
-                        data-hover="Home"
-                        href="index.html">
-                        <span class="hidden-md-up">
-                            <i class="fa fa-home"></i>
-                        </span>
-                        <span class="hidden-sm-down">Home</span>
-                    </a>
-                    <a
-                        class="nav-item nav-link {{#ifpage 'gallery'}}active{{/ifpage}}"
-                        data-hover="Gallery"
-                        href="gallery.html">
-                        <span class="hidden-md-up">
-                            <i class="fa fa-camera"></i>
-                        </span>
-                        <span class="hidden-sm-down">Gallery</span>
-                    </a>
-                    <a
-                        class="nav-item nav-link {{#ifpage 'about'}}active{{/ifpage}}"
-                        data-hover="About me"
-                        href="about.html">
-                        <span class="hidden-md-up">
-                            <i class="fa fa-user"></i>
-                        </span>
-                        <span class="hidden-sm-down">About me</span>
-                    </a>
-                    <a
-                        class="nav-item nav-link {{#ifpage 'contacts'}}active{{/ifpage}}"
-                        data-hover="Contacts"
-                        href="contacts.html">
-                        <span class="hidden-md-up">
-                            <i class="fa fa-paper-plane"></i>
-                        </span>
-                        <span class="hidden-sm-down">Contacts</span>
-
-                    </a>
-                </div>
-                <!-- /Menu -->
-
+                <ul class="nav navbar-nav navbar-right add-to-cart">
+                    <li>
+                        <a href="#">
+                            <p class="text-center">
+                                <img src="/dist/img/cart.png" alt="">
+                            </p>
+                            Buy lobster
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
-    <!-- /Navigation -->
+
+    <section class="container lobster-intro">
+        <div class="row">
+            <div class="col-md-4">
+                <p class="h1">Lobster</h1>
+                <p class="h3">freediving weight</h3>
+                <p>
+                    Ошейник для фридайвинга нового поколения для самых легких тренировок
+                    и достижения быстрых результатов.
+                </p>
+                <p>
+                    Созданный с использованием опыта многих спортсменов, Lobster вобрал
+                    в себя самые лучше качества, приблизившись
+                    к идеалу.
+                </p>
+            </div>
+            <div class="col-md-7 pull-right">
+                <img src="/dist/img/lobster-intro.png" alt="">
+            </div>
+        </div>
+    </section>
 
 </header>
